@@ -1,3 +1,3 @@
 # PROJECT_NUMERIC
 react
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://github.com/ZXINNATTAPAT/PROJECT_NUMERIC/blob/main/Screenshot%20(312).png)
