@@ -31,7 +31,7 @@ function Navbar() {
                        
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/bisection">Bisection Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="/BSisection">Bisection Method</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active fs-4" aria-current="page" href="/False">Flase position Method</a>

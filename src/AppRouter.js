@@ -28,7 +28,7 @@ export default function AppRouter() {
 
                     <Route path="/" element={<Home />} />
 
-                    <Route path="/bisection" element={<Bisection />} />
+                    <Route path="/Bisection" element={<Bisection />} />
 
                     <Route path="/False" element={<False />} />
 
