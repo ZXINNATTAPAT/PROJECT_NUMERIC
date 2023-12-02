@@ -23,9 +23,7 @@ export default function App() {
             <BrowserRouter>
 
                     <Navbar />
-
                     <Routes>
-
                         <Route path="/" element={<Home />} />
 
                         <Route path="/Bisection" element={<Bisection />} />
@@ -51,8 +49,6 @@ export default function App() {
                         <Route path="/NewtonInterpolation" element={<NewtonInterpolation />} />
 
                         <Route path="/NewtonRegression" element={<Newtonregessionpages />} />
-                    
-
                 </Routes>
                     <Footer />
             </BrowserRouter>
