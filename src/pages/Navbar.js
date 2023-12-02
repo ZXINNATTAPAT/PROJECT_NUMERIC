@@ -24,48 +24,48 @@ function Navbar() {
                 
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/">
+                      <a class="nav-link active fs-4" aria-current="page" href="">
                         <h3><ImHome /></h3>
                        </a>
                        <h2 > Root of equation</h2>
                        
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Bisection">Bisection Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Bisection">Bisection Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/False">Flase position Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="False">Flase position Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Newton">Newton Raphson Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Newton">Newton Raphson Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Secant">Secant Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Secant">Secant Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Onepoint">one Point Iteration Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Onepoint">one Point Iteration Method</a>
                     </li>
                     <h2>Linear algebra</h2>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Cramer">Carmer's Rule</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Cramer">Carmer's Rule</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Gaussjd">Guss-Jordan Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Gaussjd">Guss-Jordan Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/GaussEM">gaussian-elimination Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="GaussEM">gaussian-elimination Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/Matrixinversion">Matrix inversion Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="Matrixinversion">Matrix inversion Method</a>
                     </li>
                     <h2>Interpolation</h2>
                    
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/NewtonInterpolation">NewtonInterpolation Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="NewtonInterpolation">NewtonInterpolation Method</a>
                     </li>
                     <h2>Linear Regression</h2>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/NewtonRegression">Linear Regression</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="NewtonRegression">Linear Regression</a>
                     </li>
                    
 
