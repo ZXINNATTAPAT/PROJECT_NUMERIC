@@ -1,15 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React  from 'react';
 import Formflase from '../Components/Formflase';
+import Navbar from './Navbar';
 
 
 export default function False(){
 		  return (
 			<div>
-				<div className=' container'>
-					
-						<div className="border rounded-4 bg-light position-absolute top-50 start-50 translate-middle w-75  p-3 shadow p-3 mb-5 bg-body rounded" >
-						
+				<Navbar/>
+				<br/><br/><br/>
+				<div className='container'>
+						<div >
 						<center><h1>False Position Method</h1></center>
 
 						{/* ############################################ FORM INPUT ############################################ */}

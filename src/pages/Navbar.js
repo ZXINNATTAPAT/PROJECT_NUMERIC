@@ -34,7 +34,7 @@ function Navbar() {
                       <a class="nav-link active fs-4" aria-current="page" href="/Bisection">Bisection Method</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active fs-4" aria-current="page" href="/False">Flase position Method</a>
+                      <a class="nav-link active fs-4" aria-current="page" href="/false">Flase position Method</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active fs-4" aria-current="page" href="/Newton">Newton Raphson Method</a>
@@ -78,6 +78,7 @@ function Navbar() {
             
 
           </nav>
+          <br></br>
               
         
                       

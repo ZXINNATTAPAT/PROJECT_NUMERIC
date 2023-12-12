@@ -19,40 +19,43 @@ import Newtonregessionpages from "./Input_regression/Newtonregp"
 
 export default function App() {
     return(
-        <div className="container">
+        
             <BrowserRouter>
-
+                {/* <nav>
                     <Navbar />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
+                </nav> */}
+                        <div className="container">
+                            <Routes>
+                                <Route path="/" element={<Home />} />
 
-                        <Route path="/Bisection" element={<Bisection />} />
+                                <Route path="/Bisection" element={<Bisection />} />
 
-                        <Route path="/False" element={<False />} />
+                                <Route path="/false" element={<False />} />
 
-                        <Route path="/Newton" element={<Newtonx />} />
+                                <Route path="/Newton" element={<Newtonx />} />
 
-                        <Route path="/Secant" element={<Secantp />} />
+                                <Route path="/Secant" element={<Secantp />} />
 
-                        <Route path="/Onepoint" element={<Onepointp />} />
+                                <Route path="/Onepoint" element={<Onepointp />} />
 
-                        <Route path="/Class" element={<Class />} />
+                                <Route path="/Class" element={<Class />} />
 
-                        <Route path="/Cramer" element={<CramerRulep />} />
+                                <Route path="/Cramer" element={<CramerRulep />} />
 
-                        <Route path="/Gaussjd" element={<Gaussjd />} />
+                                <Route path="/Gaussjd" element={<Gaussjd />} />
 
-                        <Route path="/GaussEM" element={<GaussEM />} />
+                                <Route path="/GaussEM" element={<GaussEM />} />
 
-                        <Route path="/Matrixinversion" element={<Matrixinversion />} />
+                                <Route path="/Matrixinversion" element={<Matrixinversion />} />
 
-                        <Route path="/NewtonInterpolation" element={<NewtonInterpolation />} />
+                                <Route path="/NewtonInterpolation" element={<NewtonInterpolation />} />
 
-                        <Route path="/NewtonRegression" element={<Newtonregessionpages />} />
-                </Routes>
+                                <Route path="/NewtonRegression" element={<Newtonregessionpages />} />
+                            </Routes>
                     <Footer />
+                        </div>
             </BrowserRouter>
-        </div>
+        
     )
 }
 
