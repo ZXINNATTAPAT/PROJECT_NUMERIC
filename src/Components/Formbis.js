@@ -98,16 +98,16 @@ export default function Formbis()
 											</table>
 										</div>
 								</div>
-									<div className='col'>
+									<div className=''>
 							<LineChart
-									width={550}
+									width={400}
 									height={300}
 									data={datanew}
 									margin={{
-										top: 5,
-										right: 30,
-										left: 20,
-										bottom: 5
+										top: 0,
+										right:0,
+										left: 0,
+										bottom: 0
 									}}
 									>
 									<CartesianGrid strokeDasharray="3 3" />

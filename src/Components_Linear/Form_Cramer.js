@@ -13,8 +13,7 @@ export default function FormCramer()
   
   return (
     <div className="App">
-      <center>
-       <select className="form-select form-select-lg mb-3 w-25" value={inputState} onChange={(e) => {
+       <select className="form-select form-select-lg " value={inputState} onChange={(e) => {
           const selectedinput = e.target.value;
           setinputState(selectedinput);
         }}>
@@ -38,7 +37,7 @@ export default function FormCramer()
             return null
         }
       })()}
-      </center>  
+      
         
       
     </div>

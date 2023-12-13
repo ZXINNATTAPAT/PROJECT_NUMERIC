@@ -30,45 +30,44 @@ export default function Input2x2() {
 
     }
     return (
-      <div className="Lost">
-        
+      <div className="">
         <form onSubmit ={calCarmer}>
             <div className="row">
-                    <div className="col">
+                    <div className="col p-2 m-1">
                         <div className="form-group input_form_label">
-                    <div class="container form-group input_form_label">
-                        <div class="row">
-                            <div class="col">
-                            <input type="number" className="w-25 p-3 border border-3  border-dark" value={x00} onChange={(e)=> setx00(e.target.value)}/>
-                        </div>
-                        <div class="col">
-                                <input type="number" className="w-25 p-3 border border-3  border-dark" value={x01} onChange={(e)=> setx01(e.target.value)}/>
-                        </div>
-                        <div class="col">
-                            <input type="number" className="w-25 p-3 border border-3  border-dark" value={xa} onChange={(e)=> setxa(e.target.value)}/>
-                        </div>
-                        </div><br />
-                        <div class="row">	
-                            <div class="col">
-                            <input type="number" className="w-25 p-3 border border-3  border-dark" value={x10} onChange={(e)=> setx10(e.target.value)}/>
+                            <div class="container ">
+
+                            <div class="row m-2">
+                                    
+                                    <input type="number" className="col p-2 m-1" placeholder="X 0 0" value={x00} onChange={(e)=> setx00(e.target.value)}/>
+                                
+                                    <input type="number" className="col p-2 m-1" placeholder="x 0 1" value={x01} onChange={(e)=> setx01(e.target.value)}/>
+                            
+                                    <input type="number" className="col p-2 m-1" placeholder="x a" value={xa} onChange={(e)=> setxa(e.target.value)}/>
+                                
                             </div>
-                        <div class="col">
-                            <input type="number" className="w-25 p-3 border border-3  border-dark" value={x11} onChange={(e)=> setx11(e.target.value)}/>
+
+                            <div class="row m-2">	
+                                
+                                    <input type="number" className="col p-2 m-1" placeholder="x 1 0" value={x10} onChange={(e)=> setx10(e.target.value)}/>
+                                
+                                    <input type="number" className="col p-2 m-1" placeholder="x 1 1" value={x11} onChange={(e)=> setx11(e.target.value)}/>
+                              
+                                    <input type="number" className="col p-2 m-1" placeholder="x b" value={xb} onChange={(e)=> setxb(e.target.value)}/>
                             </div>
-                            <div class="col">
-                            <input type="number" className="w-25 p-3 border border-3  border-dark" value={xb} onChange={(e)=> setxb(e.target.value)}/>
-                            </div>
-                        </div><br />
-                            <button type="submit" class="btn btn-primary border border-2 form-control w-35 p-3">
-                            Calculate</button>
+
                         </div>
+                            
                     </div>  
                 </div>
             </div>
-        </form><br />
+            <button type="submit" class="btn btn-primary col">Calculate</button>
+        </form>
+    
+        <br/>
                 <div class="row">
-                    <div class="col"><h2>X:{ans_x}</h2></div>
-                    <div class="col"><h2>Y:{ans_y}</h2></div>
+                  <h4>X: {ans_x}</h4>
+                    <h4>Y: {ans_y}</h4>
                 </div>
       </div>
     )

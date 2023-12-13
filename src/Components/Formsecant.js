@@ -97,13 +97,13 @@ export default function Formsecant()
 							</div>
 							<div className='col'>
 									<LineChart
-											width={500}
-											height={300}
+											width={400}
+											height={200}
 											data={datanew}
 											margin={{
 												top: 5,
-												right: 30,
-												left: 20,
+												right:0,
+												left: 0,
 												bottom: 5
 											}}
 											>

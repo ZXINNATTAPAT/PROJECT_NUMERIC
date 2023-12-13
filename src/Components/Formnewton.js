@@ -59,7 +59,7 @@ export default function Formnewton()
 							
 							<h5>Root is {root1}</h5>
 							<div className='row'>
-								<div className='col'>
+								<div className='col-lg-6'>
 										<div className='overflow-auto  'style={{height: '300px'}}>
 												<table class="table table-dark " >
 															<thead>
@@ -82,16 +82,17 @@ export default function Formnewton()
 												</table>
 										</div>
 									</div>
-							<div className='col'>
+							<div className='col-lg-6'>
+								<div style={{width:"100%"}}>
 									<LineChart
-											width={500}
-											height={300}
+											width={400}
+											height={200}
 											data={datanew}
 											margin={{
-												top: 5,
-												right: 30,
-												left: 20,
-												bottom: 5
+												top: 0,
+												right: 0,
+												left: 0,
+												bottom: 0
 											}}
 											>
 											<CartesianGrid strokeDasharray="3 3" />
@@ -106,10 +107,10 @@ export default function Formnewton()
 												activeDot={{ r: 8 }}
 											/>
 											
-											</LineChart>
+									</LineChart>
 								</div>
-
-					</div>
+								</div>
+							</div>
         	</div>
         </div>
     )

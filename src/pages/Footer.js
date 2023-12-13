@@ -10,7 +10,7 @@ function Footer() {
                <div className='container fixed-bottom'>
                 <div class="text-center p-3">
                       Contact web developer :
-                    <a class="text-dark" href="#"> Facebook   </a>
+                    <a class="text-dark" href="#"> Facebook </a>
                 </div>
                </div>
                 
