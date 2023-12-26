@@ -8,12 +8,10 @@ import Input5x5 from '../Input_linear/Input5x5';
 
 export default function FormCramer()
 {
-  
   const [inputState, setinputState] = useState("");
-  
   return (
     <div className="App">
-       <select className="form-select form-select-lg " value={inputState} onChange={(e) => {
+       <select className="form-select form-select " value={inputState} onChange={(e) => {
           const selectedinput = e.target.value;
           setinputState(selectedinput);
         }}>

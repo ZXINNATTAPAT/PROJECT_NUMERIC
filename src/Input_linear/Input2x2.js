@@ -3,8 +3,6 @@ import { findSolution2x2 } from "../Components_Linear/Test_Cramer"
 
 
 export default function Input2x2() {
-    
-    
     const [x00,setx00] = useState() 
     const [x01,setx01] = useState() 
     const [xa,setxa] = useState() 
@@ -12,7 +10,6 @@ export default function Input2x2() {
     const [x11,setx11] = useState()
     const [xb,setxb] = useState() 
 
-   
 
     const[ans_x,setansx] =useState()
     const[ans_y,setansy] =useState()
@@ -62,9 +59,7 @@ export default function Input2x2() {
                 </div>
             </div>
             <button type="submit" class="btn btn-primary col">Calculate</button>
-        </form>
-    
-        <br/>
+        </form> <br/>
                 <div class="row">
                   <h4>X: {ans_x}</h4>
                     <h4>Y: {ans_y}</h4>

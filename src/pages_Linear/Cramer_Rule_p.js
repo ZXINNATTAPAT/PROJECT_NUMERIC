@@ -15,10 +15,10 @@ export default function CramerRulep(){
 						<div className="" >
 						
 						<center><h1>Carmer's Rule Method</h1></center>
+						<br/>
 
 						{/* ############################################ FORM INPUT ############################################ */}
-						
-																		<FormCramer />
+								<FormCramer />
 																		
 							</div>
 					</div>
