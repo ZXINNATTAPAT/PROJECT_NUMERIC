@@ -43,73 +43,51 @@ export default function Input3x3() {
     }
     return (
       <div className="Lost">
-        
         <form onSubmit ={calCarmer}>
-            <div className="row">
+            <div className="row  ">
                     <div className="col">
-                        <div className="form-group input_form_label">
-                    <div class="container form-group input_form_label">
-                        <div class="row">
+                        <div className="form-group">
+                        <div class="container form-group ">
+                            <div class="row m-2">
+                                <input type="number" className="col p-1 m-2 form-control " value={x11} placeholder="x11" onChange={(e)=> setx11(e.target.value)}/>
+                         
+                                <input type="number" className="col p-1 m-2 form-control" value={x12} placeholder="x12" onChange={(e)=> setx12(e.target.value)}/>
+                          
+                                <input type="number" className="col p-1 m-2 form-control" value={x13} placeholder="x13" onChange={(e)=> setx13(e.target.value)}/>
+                         
+                                <input type="number" className="col p-1 m-2 form-control" value={xa} placeholder="xa" onChange={(e)=> setxa(e.target.value)}/>
+                            </div>
+
+                            <div class="row m-2">	
+                                <input type="number" className="col p-1 m-2 form-control" value={x21} placeholder="x21" onChange={(e)=> setx21(e.target.value)}/>
+                          
+                                <input type="number" className="col p-1 m-2 form-control" value={x22} placeholder="x22" onChange={(e)=> setx22(e.target.value)}/>
+                             
+                                <input type="number" className="col p-1 m-2 form-control" value={x23} placeholder="x23" onChange={(e)=> setx23(e.target.value)}/>
                             
-                            <div class="col">
-                            
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x11} onChange={(e)=> setx11(e.target.value)}/>
-                        </div>
-                        <div class="col">
-                            
-                                <input type="number" className=" p-3 border border-3  border-dark" value={x12} onChange={(e)=> setx12(e.target.value)}/>
-                        </div>
-                        <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x13} onChange={(e)=> setx13(e.target.value)}/>
-                        </div>
-                        <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={xa} onChange={(e)=> setxa(e.target.value)}/>
-                        </div>
-                        </div><br />
-                        <div class="row">	
-                            
-                                
-                            <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x21} onChange={(e)=> setx21(e.target.value)}/>
+                                <input type="number" className="col p-1 m-2 form-control" value={xb} placeholder="xb" onChange={(e)=> setxb(e.target.value)}/>
                             </div>
-                        <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x22} onChange={(e)=> setx22(e.target.value)}/>
+
+                            <div class="row m-2">
+                                <input type="number" className="col p-1 m-2 form-control" value={x31} placeholder="x31" onChange={(e)=> setx31(e.target.value)}/>
+                          
+                                <input type="number" className="col p-1 m-2 form-control" value={x32} placeholder="x32" onChange={(e)=> setx32(e.target.value)}/>
+                      
+                                <input type="number" className="col p-1 m-2 form-control" value={x33} placeholder="x33" onChange={(e)=> setx33(e.target.value)}/>
+                   
+                                <input type="number" className="col p-1 m-2 form-control" value={xc} placeholder="xc" onChange={(e)=> setxc(e.target.value)}/>
                             </div>
-                        <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x23} onChange={(e)=> setx23(e.target.value)}/>
+                                <button type="submit" class="btn btn-primary">Calculate</button>
                             </div>
-                            <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={xb} onChange={(e)=> setxb(e.target.value)}/>
-                            </div>
-                        </div><br />
-                        <div class="row">
-                            
-                            <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x31} onChange={(e)=> setx31(e.target.value)}/>
-                            </div>
-                        <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x32} onChange={(e)=> setx32(e.target.value)}/>
-                            </div>
-                        <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={x33} onChange={(e)=> setx33(e.target.value)}/>
-                            </div>
-                            <div class="col">
-                            <input type="number" className=" p-3 border border-3  border-dark" value={xc} onChange={(e)=> setxc(e.target.value)}/>
-                            </div>
-                        </div><br />
-                            <button type="submit" class="btn btn-primary border border-2 form-control w-35 p-3">
-                            Calculate</button>
-                        </div>
                     </div>  
                 </div>
             </div>
         </form><br />
             <div class="row">
-                
                 <div class="col">
-                    <h4>X1:{ans_x}</h4>
-                    <h4>X2:{ans_y}</h4>
-                    <h4>X3:{ans_z}</h4>
+                    <p>X1: {ans_x}</p>
+                    <p>X2: {ans_y}</p>
+                    <p>X3: {ans_z}</p>
                 </div>
                 
             </div>

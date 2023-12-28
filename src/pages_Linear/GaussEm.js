@@ -13,13 +13,9 @@ export default function GaussEM(){
 				<div className='container'>
 					<div>
 						<div className="" >
-						
-						<center><h1>Gauss-Elimination Method</h1></center>
-
-						{/* ############################################ FORM INPUT ############################################ */}
-																		<FormGaussEM />
-																		
-							</div>
+							<center><h1>Gauss-Elimination Method</h1></center>
+							<FormGaussEM />
+						</div>
 					</div>
 						
 				</div>

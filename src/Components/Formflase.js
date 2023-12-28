@@ -9,7 +9,8 @@ import {
 	YAxis,
 	CartesianGrid,
 	Tooltip,
-	Legend
+	Legend,
+	ResponsiveContainer
   } from "recharts";
 	
 export default function Formflase()
@@ -33,69 +34,41 @@ export default function Formflase()
 	
     return(
         <div>
-			<div className='container-fluid'>
+			<div className='container'>
+				<br/>
+				<div class="card border " >
+					<div class="card-header bg-transparent ">False Position Method</div>
+					<div class="card-body ">
 				<form onSubmit ={calfalse} >
-						<div class="mb-3">
-									<label >Input Equation</label>
-									<input type="text" class="form-control w-85 p-3 " id="formGroupExampleInput" 
-										value={equation} onChange={(event)=> setequation(event.target.value)} />
-								</div>
-									<div class="mb-3 row g-3">
-										<div class="col">
-											<label>Input A</label>
-												<input type="number" class="form-control w-45 p-3 " id="formGroupExampleInput" step={0.1}
-													value={a} onChange={(e)=> seta(e.target.value)}/>	
-										</div>
+							<div className='row m-2'>
+								<input type="text" class="form-control p-2 m-1" placeholder='Input Equation' id="formGroupExampleInput" 
+									value={equation} onChange={(event)=> setequation(event.target.value)} />
+							</div>
+								
+							<div class="row m-2 ">
 
-										<div class="col">
-											<label>Input B</label>
-												<input type="number" class="form-control w-45 p-3" id="formGroupExampleInput" step={0.1}
-													value={b} onChange={(e)=> setb(e.target.value)} />
-											</div>
-													
-								</div>
+								<input type="number" class="form-control col p-2 m-1" placeholder='Input A' id="formGroupExampleInput" step={0.1}
+										value={a} onChange={(e)=> seta(e.target.value)}/>	
+			
+								<input type="number" class="form-control col p-2 m-1" placeholder='Input B' id="formGroupExampleInput" step={0.1}
+										value={b} onChange={(e)=> setb(e.target.value)} />
 									
-						<div class="mb-3 row g-3">
-							<div class="col">
-								<button type="submit" class="btn btn-primary border border-2 
-								form-control w-35 p-3" >Calculate</button>
 							</div>
-
-							<div class="col">
-								<button type="button" class="btn btn-secondary border border-2 form-control w-35 p-3" 
-										onClick={reload}>Reload</button>
-							</div>
+									
+						<div class="row m-2">
+								<button type="submit" class="btn btn-primary col  p-2 m-1" >Calculate</button>
+					
+								<button type="button" class="btn btn-secondary col p-2 m-1" onClick={reload}>Reload</button>
 						</div>						
 				</form>	
-							<h5>Equation {equation}</h5>
-							<h5>Root is {root1}</h5>
-							<div className='row'>
-								<div className='col'>
-									<div className='overflow-auto  'style={{height: '300px'}}>
-											<table class="table table-dark table-bordered table-striped mb-0" >
-														<thead>
-															<tr>
-																<th > <center>Iteration</center> </th>
-														<th > <center>x0</center> </th>
-														<th > <center>x1</center> </th>
-														<th > <center>xm</center> </th>
-															</tr>
-														</thead>
-													<tbody>
-														{datanew.map((val, key) => {
-														return (
-															<tr  key={key}>
-																<td ><center>{val.iter}</center></td>
-																<td ><center>{val.x0}</center></td>
-																<td ><center>{val.x1}</center></td>
-																<td ><center>{val.xm}</center></td>
-															</tr>
-														)})}
-													</tbody>
-											</table>
-										</div>
-								</div>
-								<div className='col'>
+
+				<div className='row m-2'>
+					<p className='col'>Equation {equation}</p>
+					<p className='col'>Root is {root1}</p>
+				</div><br/>
+				
+				<div className='row m-2'>
+								<ResponsiveContainer width="100%" height={300}>
 									<LineChart
 											width={550}
 											height={300}
@@ -119,9 +92,40 @@ export default function Formflase()
 												activeDot={{ r: 8 }}
 											/>
 											{/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
-											</LineChart>
-								</div>
+									</LineChart>
+								</ResponsiveContainer>
+				</div><br/>
+							
+				<div className='row m-2'>
+						<div className='overflow-auto col 'style={{height: '300px'}}>
+								<table class="table table-bordered" >
+															<thead>
+																<tr>
+																	<th > Iteration </th>
+															<th > x0</th>
+															<th > x1</th>
+															<th > xm</th>
+																</tr>
+															</thead>
+														<tbody>
+															{datanew.map((val, key) => {
+															return (
+																<tr  key={key}>
+																	<td >{val.iter}</td>
+																	<td >{val.x0}</td>
+																	<td >{val.x1}</td>
+																	<td >{val.xm}</td>
+																</tr>
+															)})}
+														</tbody>
+												</table>
 						</div>
+				</div><br/>
+								
+				
+							
+				</div>
+        		</div>
         	</div>
         </div>
     )

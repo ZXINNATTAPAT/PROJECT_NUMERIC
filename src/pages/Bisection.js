@@ -11,14 +11,10 @@ export default function Bisection(){
 				<br/><br/><br/>
 				<div className='container-fluid'>
 					<div>
-						<div className="container" >
-						
-						<center><h1>Bisection Method</h1></center>
-
-						{/* ############################################ FORM INPUT ############################################ */}
-																		<Formbis />
-																		
-							</div>
+						<div className="container " >
+							<h1 className='m-2'>Bisection Method</h1>
+							<Formbis />
+						</div>
 					</div>
 						
 				</div>

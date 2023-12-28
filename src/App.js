@@ -52,7 +52,7 @@ export default function App() {
 
                                 <Route path="/NewtonRegression" element={<Newtonregessionpages />} />
                             </Routes>
-                    <Footer />
+                  
                         </div>
             </BrowserRouter>
         

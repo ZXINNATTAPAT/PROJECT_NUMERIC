@@ -11,11 +11,8 @@ export default function False(){
 				<br/><br/><br/>
 				<div className='container'>
 						<div >
-						<center><h1>False Position Method</h1></center>
-
-						{/* ############################################ FORM INPUT ############################################ */}
-																		<Formflase />
-																		
+							<h1 className='m-2'>False Position Method</h1>
+							<Formflase />
 						</div>
 				</div>
 			</div>
