@@ -10,17 +10,9 @@ export default function Newton(){
 				<Navbar/>
 				<br/><br/><br/>
 				<div className='container'>
-					<div>
-						<div className="" >
-						
-						<center><h1>Newton Method</h1></center>
-
-						{/* ############################################ FORM INPUT ############################################ */}
-																		<Formnewton />
-																		
-							</div>
-					</div>
-						
+							<h1 className='m-2'>Newton Raphson Method</h1>
+							<Formnewton />
+							<br/><br/><br/>
 				</div>
 			</div>
 		  );

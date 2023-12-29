@@ -2,16 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import { DataTable } from './Testbisec';
 import Bisection_method from './Testbisec'
-import {
-	LineChart,
-	Line,
-	XAxis,
-	YAxis,
-	CartesianGrid,
-	Tooltip,
-	Legend,
-	ResponsiveContainer
-} from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 
 export default function Formbis() {
@@ -19,44 +10,45 @@ export default function Formbis() {
 	const [b, setb] = useState(0)
 	const [equation, setequation] = useState('')
 	const [root1, setroot] = useState('')
-
+	//BISECTION METHOD 
 	let calBisection = (event) => {
-		event.preventDefault()
-		//############################################ BISECTION METHOD ########################################
+		event.preventDefault()	
 		let roots = Bisection_method(a, b, equation);
-		console.log(roots);
-		setroot(roots.toFixed(6));
+		// console.log(roots);
+		if (!isNaN(roots)) {
+			setroot(roots.toFixed(6));
+		  } else {
+			window.alert('Input error');
+		  }
 	}
-	//############################################ reload pages ############################################
+	//reload pages 
 	let reload = () => {
 		window.location.reload()
 	}
-
 	const datanew = DataTable();
 
 	return (
 		<>
 			<div className='container'><br />
-				<div class="card border " >
-					<div class="card-header bg-transparent ">Bisection Method</div>
+				<div class="card border" >
+					<div class="card-header bg-transparent">Bisection Method</div>
 					<div class="card-body ">
 						<form onSubmit={calBisection} >
 
 							<div className='row m-2'>
-								<input type="text" class="form-control m-1 col p-2 " placeholder='Input Equation' id="formGroupExampleInput"
-									value={equation} onChange={(event) => setequation(event.target.value)} />
+								<input type="text" class="form-control m-1 col p-2 "
+									placeholder='Input Equation' id="formGroupExampleInput"
+									value={equation} onChange={(event) => setequation(event.target.value)} required />
 							</div>
-
 							<div class=" row m-2">
+								<input type="number" class="form-control col m-1 p-2"
+									placeholder='Input A' id="formGroupExampleInput" step={0.1}
+									value={a} onChange={(e) => seta(e.target.value)} required />
 
-								<input type="number" class="form-control col m-1 p-2" placeholder='Input A' id="formGroupExampleInput" step={0.1}
-									value={a} onChange={(e) => seta(e.target.value)} />
-
-								<input type="number" class="form-control  col m-1 p-2" placeholder='Input B' id="formGroupExampleInput" step={0.1}
-									value={b} onChange={(e) => setb(e.target.value)} />
-
+								<input type="number" class="form-control  col m-1 p-2"
+									placeholder='Input B' id="formGroupExampleInput" step={0.1}
+									value={b} onChange={(e) => setb(e.target.value)} required />
 							</div>
-
 							<div className='row m-2'>
 								<button type="submit" class="btn btn-primary col m-1  p-2" >Calculate</button>
 
@@ -68,6 +60,7 @@ export default function Formbis() {
 							<p className='col'>Equation {equation}</p>
 							<p className='col'>Root is {root1}</p>
 						</div>
+
 						<div className='row m-2'>
 							<div className='col'>
 								<ResponsiveContainer width="100%" height={300}>
@@ -123,11 +116,8 @@ export default function Formbis() {
 								</table>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
 			</div><br />
 		</>
 	)

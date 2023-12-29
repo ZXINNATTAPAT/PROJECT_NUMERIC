@@ -6,8 +6,8 @@ import Class from "./pages/Class"
 import Bisection from "./pages/Bisection"
 import False from "./pages/False"
 import Newtonx from "./pages/Newtonx"
-import  Navbar  from "./pages/Navbar"
-import Footer from "./pages/Footer"
+// import  Navbar  from "./pages/Navbar"
+// import Footer from "./pages/Footer"
 import Gaussjd from "./pages_Linear/Gaussjd_p"
 import CramerRulep from "./pages_Linear/Cramer_Rule_p"
 import Onepointp from "./pages/Onepoint"
@@ -19,12 +19,8 @@ import Newtonregessionpages from "./Input_regression/Newtonregp"
 
 export default function App() {
     return(
-        
             <BrowserRouter>
-                {/* <nav>
-                    <Navbar />
-                </nav> */}
-                        <div className="container">
+                        
                             <Routes>
                                 <Route path="/" element={<Home />} />
 
@@ -53,7 +49,7 @@ export default function App() {
                                 <Route path="/NewtonRegression" element={<Newtonregessionpages />} />
                             </Routes>
                   
-                        </div>
+                  
             </BrowserRouter>
         
     )
