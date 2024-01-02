@@ -8,10 +8,10 @@ export default function False(){
 		  return (
 			<div>
 				<Navbar/>
-				<br/><br/><br/>
+				<br/>
 				<div className='container'>
 						<div >
-							<h1 className='m-2'>False Position Method</h1>
+							<h1 className='m-2'>False Position Method</h1><br/>
 							<Formflase />
 						</div>
 				</div>

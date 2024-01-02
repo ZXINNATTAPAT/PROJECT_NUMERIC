@@ -40,7 +40,7 @@ export default function newton(x,eq){
 
       return x ;
   }
-  export function DataTableonenew(){
+  export function DataTable(x){
     const data =[]
     const datax =[]
     for (let i = 0; i < i_arr.length; i++) {
@@ -49,6 +49,17 @@ export default function newton(x,eq){
     for (let i = 0; i < i_arr.length; i++) {
         data.push(datax[i])
     }
+
+    if(x === 1){
+        // Clear the existing data
+        data.length = 0;
+        datax.length = 0;
+        i_arr.length = 0;
+        a_arr.length = 0;
+        // b_arr.length = 0 ;
+        root_arr.length = 0;
+    }
+        
    return data;
 }	
 // // Initial values assumed

@@ -8,11 +8,11 @@ export default function Bisection(){
 		  return (
 			<div>
 				<Navbar/>
-				<br/><br/><br/>
+				<br/>
 				<div className='container-fluid'>
 					<div>
 						<div className="container " >
-							<h1 className='m-2'>Bisection Method</h1>
+							<h1 className='m-2'>Bisection Method</h1><br/>
 							<Formbis />
 						</div>
 					</div>

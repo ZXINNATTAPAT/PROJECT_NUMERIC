@@ -8,7 +8,7 @@ export default function Newton(){
 		  return (
 			<div>
 				<Navbar/>
-				<br/><br/><br/>
+				<br/>
 				<div className='container'>
 							<h1 className='m-2'>Newton Raphson Method</h1>
 							<Formnewton />
