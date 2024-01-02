@@ -31,7 +31,8 @@ import {
 	}, []); // Empty dependency array to run the effect only once
 	const fetchProblems = async () => {
 	  try {
-		const response = await axios.get('http://localhost:5000/generateProblems');
+		// const response = await axios.get('http://localhost:5000/generateProblems');
+		const response = await axios.get('https://numer-api.onrender.com/generateProblems');
 		setProblems(response.data.problems);
 		console.log(response.data.problems); // Log the fetched problems
 	  } catch (error) {

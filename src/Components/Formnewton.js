@@ -55,7 +55,8 @@ export default function Formnewton()
 		
 		  const fetchProblems = async () => {
 			try {
-			  const response = await axios.get('http://localhost:5000/generateProblems');
+			//   const response = await axios.get('http://localhost:5000/generateProblems');
+			  const response = await axios.get('https://numer-api.onrender.com/generateProblems');
 			  setProblems(response.data.problems);
 			//   console.log(problems);
 			} catch (error) {
