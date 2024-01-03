@@ -28,7 +28,6 @@ function Navbar() {
                              <br/><h3><ImHome /></h3>
                             
                           </a>
-
                             <h3>Root of equation</h3>
                           <hr/>
                      

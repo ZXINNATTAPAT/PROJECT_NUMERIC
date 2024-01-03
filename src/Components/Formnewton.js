@@ -26,7 +26,7 @@ export default function Formnewton()
     
     let calNewton = (event) => {
         event.preventDefault()
-		//#### BISECTION METHOD 
+	
 		let roots= newton(a,equation);
 			if (!isNaN(roots)) {
 				setroot(roots.toFixed(6));
@@ -38,12 +38,10 @@ export default function Formnewton()
 		}
 		//#### reload pages ####
 		const reload = () => {
-			// รีเซ็ตค่าทุกอย่างเมื่อคลิกปุ่ม Reload
 			seta(0);
 			setequation('');
 			setroot('');
 			setData_new(DataTable(1));
-			// setProblems(problem.id[1]);
 			setHasCalculated(false);
 		  };
 		
@@ -67,7 +65,6 @@ export default function Formnewton()
 		  const handleSelectChange = (event) => {
 			const selectedId = event.target.value;
 			const selectedProblem = problems.find((problem) => problem.id === parseInt(selectedId, 10));
-			
 			// Ensure selectedProblem is not undefined before setting the state
 			if (selectedProblem) {
 			  setequation(selectedProblem.equation);
@@ -90,10 +87,10 @@ export default function Formnewton()
 
 									<select onChange={handleSelectChange} className="form-select col m-1 p-2" >
 										<option value={null}>Equation example</option>
-										{problems.map((problem) => (
-											<option key={problem.id} value={problem.id}>
-												{`${problem.equation}, A: ${problem.a}`}
-											</option>
+											{problems.map((problem) => (
+												<option key={problem.id} value={problem.id}>
+													{`${problem.equation}, A: ${problem.a}`}
+												</option>
 										))}
 									</select>
 								</div>
@@ -115,34 +112,8 @@ export default function Formnewton()
 									
 						<div className='row m-2'>
 							<p>Root is {root1}</p>
-						</div>		
-
+						</div>
 						<div className='row m-2'>
-										<div className='overflow-auto col 'style={{height: '300px'}}>
-														<table className="table table-bordered " >
-																	<thead>
-																		<tr>
-																			<th >Iteration</th>
-																			<th >x0</th>
-																			<th >xm</th>
-																		</tr>
-																	</thead>
-																<tbody>
-																	{datanew.map((val, key) => {
-																	return (
-																		<tr  key={key}>
-																			<td >{val.iter}</td>
-																			<td >{val.x0}</td>
-																			<td >{val.xm}</td>
-																		</tr>
-																	)})}
-																</tbody>
-														</table>
-												
-										</div>
-									
-										
-									<div className='row m-2'>
 										<div className='col' >
 											<ResponsiveContainer width="100%" height={300}>
 												<LineChart
@@ -164,7 +135,34 @@ export default function Formnewton()
 												</LineChart>
 											</ResponsiveContainer>
 										</div>
-									</div>
+									</div>		
+
+						<div className='row m-2'>
+										<div className='overflow-auto col 'style={{height: '300px'}}>
+												<table className="table table-bordered " >
+													<thead>
+														<tr>
+															<th >Iteration</th>
+															<th >x0</th>
+															<th >xm</th>
+															</tr>
+													</thead>
+													<tbody>
+														{datanew.map((val, key) => {
+															return (
+															<tr  key={key}>
+															<td >{val.iter}</td>
+															<td >{val.x0}</td>
+															<td >{val.xm}</td>
+															</tr>
+															)})}
+													</tbody>
+												</table>
+												
+										</div>
+									
+										
+									
 						</div>
 					</div>
 				</div>

@@ -17,8 +17,6 @@ export default function Formbis() {
 	const [datanew, setData_new] = useState([]);
 	const [hasCalculated, setHasCalculated] = useState(false);
 
-	
-
 	//BISECTION METHOD 
 	let calBisection = (event) => {
 		event.preventDefault()	
@@ -41,10 +39,9 @@ export default function Formbis() {
 		setroot('');
 		setData_new(DataTable(1));
 		setHasCalculated(false);
-	  };
+	  };// const datanew = DataTable();
 
-	// const datanew = DataTable();
-	
+
 	useEffect(() => {
 		// Fetch problems when component mounts
 		fetchProblems();
@@ -65,13 +62,12 @@ export default function Formbis() {
 		const selectedId = event.target.value;
 		const selectedProblem = problems.find((problem) => problem.id === parseInt(selectedId, 10));
 		// Ensure selectedProblem is not undefined before setting the state
-		if (selectedProblem) {
-		  setequation(selectedProblem.equation);
-		  seta(selectedProblem.a);
-		  setb(selectedProblem.b);
-		  setData_new([]);
-		}
-		
+			if (selectedProblem) {
+				setequation(selectedProblem.equation);
+				seta(selectedProblem.a);
+				setb(selectedProblem.b);
+				setData_new([]);
+			}
 	  };
 	  
 	return (
@@ -155,10 +151,10 @@ export default function Formbis() {
 								<table className="table table-bordered"  >
 									<thead>
 										<tr>
-											<th > Iteration </th>
-											<th > x0 </th>
-											<th > x1 </th>
-											<th > xm </th>
+											<th> Iteration </th>
+											<th> x0 </th>
+											<th> x1 </th>
+											<th> xm </th>
 										</tr>
 									</thead>
 									<tbody>

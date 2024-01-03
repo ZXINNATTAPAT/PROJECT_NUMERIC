@@ -9,20 +9,14 @@ export default function Onepointp(){
 		  return (
 			<div>
 				<Navbar/>
-				<br/><br/><br/>
+				<br/>
 				<div className='container'>
 					<div>
-						<div  >
-						
-						<center><h1>Fixed Point Iteration Method</h1></center>
-
-						{/* ############################################ FORM INPUT ############################################ */}
-																		<FormOnepoint />
-																		
-							</div>
+						<h1>Fixed Point Iteration Method</h1><br/>
+						<FormOnepoint />
 					</div>
-						
 				</div>
+				<br/><br/><br/>
 			</div>
 		  );
 		};

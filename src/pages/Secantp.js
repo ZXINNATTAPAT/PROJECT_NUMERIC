@@ -7,21 +7,11 @@ import Navbar from './Navbar';
 export default function Secantp(){
 		  return (
 			<div>
-				<Navbar/>
-				<br/><br/><br/>
-				<div className=''>
-					<div>
-						<div className="" >
-						
-						<center><h1>Secant method</h1></center>
-
-						{/* ############################################ FORM INPUT ############################################ */}
-																		<Formsecant />
-																		
-							</div>
-					</div>
-						
-				</div>
+				<Navbar/><br/>
+				<div className="container" >
+					<h1 className='m-2'>Secant method</h1><br/>
+						<Formsecant />
+				</div><br/><br/><br/>
 			</div>
 		  );
 		};
